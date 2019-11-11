@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bussiness Card</title>
+    <style>
+        body{
+            background-color: #e9e9e9;
+            font-family: dosis;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        #name, #email, #address, #tel, #description{
+            border:none;
+            border-radius: 10px;
+            height: 25px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            padding-left: 5px;
+        }
+        button{
+            background-color:#88BDD6;
+            border:#fff 2px solid;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-family: dosis;
+            font-size:14px;
+            color:#fff;
+            text-transform: uppercase;
+            font-weight: bold;
+            width: 100px;
+            align-self: center;  
+        }
+        button:hover{
+            background-color:#CDCDCD;
+        }
+        button:focus {outline:0;}
+        input:focus {outline:0;}
+        .card {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            background-color:#88BDD6;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 10px 10px #CDCDCD;
+            margin:30px;
+            color:#fff;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .logo{
+            display: flex;
+            height: 100px;
+            width: auto;
+            margin-left: 40px;
+            margin-right: 150px;
+        }
+        .content{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            width: 450px;
+            border-radius: 10px;
+            box-shadow: 5px 10px 10px #CDCDCD;
+            margin:30px;
+        }
+        .newCard {
+            margin-top:25px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 12px;
+            width: 400px;
+        }
+        p{
+            margin-top:5px;
+            color:black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+        }
+
+        label{
+            margin-left:5px;
+            font-size:14px;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <form class="card">
+        <label>Full Name:</label><input type="text" id="name">
+        <label>Email:</label><input type="email" id="email">
+        <label>Phone:</label><input type="tel" id="tel">
+        <label>Business address:</label><input type="text" id="address">
+        <label>Description:</label><input type="text" id="description"><br>
+        <button type="submit" value="Submit" id="submit">Submit</button>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
